@@ -1,0 +1,5 @@
+SELECT emp_id FROM employees_data WHERE age > 30;
+SELECT f_name, l_name FROM employees_data WHERE Tittle = 'Web Designer';
+SELECT * FROM employees_data Where salary <= 100000;
+SELECT salary, perks FROM employees_data WHERE perks > 16000;
+SELECT CONCAT (l_name, ',', f_name) AS full_name FROM employees_data WHERE Tittle = 'Markteting executive';
