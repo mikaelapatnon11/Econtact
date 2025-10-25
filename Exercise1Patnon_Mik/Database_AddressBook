@@ -1,0 +1,21 @@
+CREATE DATABASE addressbook;
+USE addressbook;
+
+CREATE TABLE employees_data(
+	emp_id INT AUTO_INCREMENT PRIMARY KEY,
+    f_name VARCHAR(50),
+    l_name VARCHAR(50),
+    Tittle VARCHAR(30),
+    age INT,
+    yos INT,
+    salary DECIMAL (10,2),
+    perks DECIMAL (10,2),
+    email VARCHAR(50)
+);
+INSERT INTO employees_data values ( 1,'Rudolft', 'Reindeer', 'Business Analyst', 34, 2, 95000, 17000, 'rundolft@bugnetcom');
+SELECT * FROM employees_data;
+SELECT f_name, l_name, Tittle, age, yos, salary, perks, email FROM employees_data;
+SELECT f_name, email FROM employees_data;
+SELECT salary, perks, yos FROM employees_data;
+SELECT COUNT(*) FROM employees_data;
+SELECT salary, l_name FROM employees_data;
